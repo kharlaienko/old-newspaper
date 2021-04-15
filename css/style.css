@@ -15,12 +15,6 @@ body {
   padding-bottom: 20px;
 }
 
-.second-page {
-  height: 100vh;
-  min-height: 100vh;
-  padding-top: 20px;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "New Tegomin", sans-serif;
   font-size: 16px;
@@ -158,6 +152,86 @@ h1, h2, h3, h4, h5, h6 {
 .aside__related-title {
   font-size: 3rem;
   font-weight: bold;
+}
+
+.second-page {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+.second-page__inner {
+  display: flex;
+}
+
+.second-page-primary-title {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.second-page-primary-text {
+  font-size: 16px;
+}
+
+.first-column {
+  flex-basis: 400px;
+  padding: 5px 10px;
+}
+.first-column__box {
+  margin-bottom: 20px;
+}
+.first-column__box:nth-child(2n) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.first-column__title_top {
+  margin-bottom: 40px;
+}
+.first-column__title {
+  margin: 0 0 10px 0;
+}
+.first-column__img-box {
+  padding: 10px 0;
+  display: flex;
+  align-items: flex-start;
+}
+.first-column__img {
+  height: 185px;
+  width: 271px;
+}
+.first-column__img-text {
+  margin-left: 5px;
+}
+
+.between-column {
+  flex-basis: 166px;
+  padding: 5px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.between-column__title {
+  margin-bottom: 20px;
+}
+
+.central-column {
+  flex-basis: 420px;
+  padding: 5px 0;
+}
+.central-column__img-box {
+  padding: 0 10px 26px;
+  border-bottom: 1px solid black;
+}
+.central-column__img {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 36px;
+}
+.central-column__row {
+  padding: 0 10px;
+}
+.central-column__title {
+  margin: 0 auto 10px auto;
+  width: 328px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -30,11 +30,7 @@ body
 
     padding-bottom: 20px
 
-.second-page
-    height: 100vh
-    min-height: 100vh
-    padding-top: 20px
-    
+
 h1, h2, h3, h4, h5, h6
     font-family: $font-family
     font-size: $font-size
@@ -173,3 +169,92 @@ h1, h2, h3, h4, h5, h6
     &__related-title
         font-size: $font-subtitle
         font-weight: bold
+
+//=============Second Page==========
+//==vars===
+$second-page-border: 1px solid black
+
+
+.second-page
+    min-height: 100vh
+    padding: 20px 0
+    
+    &__inner
+        display: flex
+        
+
+//=====Fist Column======
+.second-page-primary-title
+    font-weight: bold
+    font-size: 18px
+    padding: 5px 0
+
+.second-page-primary-text
+    font-size: 16px
+
+    
+.first-column
+    flex-basis: 400px
+    padding: 5px 10px
+
+    &__box
+        margin-bottom: 20px
+    
+        &:nth-child(2n)
+            border-top: $second-page-border
+            border-bottom: $second-page-border
+
+    &__title_top
+        margin-bottom: 40px
+
+    &__title
+        margin: 0 0 10px 0
+
+    &__img-box
+        padding: 10px 0
+        display: flex
+        align-items: flex-start
+
+    &__img
+        height: 185px
+        width: 271px
+
+        &-text
+            margin-left: 5px
+    
+//===between column===
+.between-column
+    flex-basis: 166px
+
+    padding: 5px
+
+    border-left: $second-page-border
+    border-right: $second-page-border
+
+    &__title
+        margin-bottom: 20px
+
+//===central-column===
+.central-column
+    flex-basis: 420px
+    padding: 5px 0
+
+
+    &__img-box
+        padding: 0 10px 26px
+
+        border-bottom: $second-page-border
+
+    &__img
+        width: 400px
+        height: 300px
+
+        margin-bottom: 36px
+
+    &__row
+        padding: 0 10px
+
+    &__title
+        margin: 0 auto 10px auto
+        width: 328px
+        text-align: center
